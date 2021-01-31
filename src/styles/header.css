@@ -1,0 +1,10 @@
+.header div {
+  height: 120px;
+  background-color: #0076c9;
+  text-align: center;
+}
+
+.header h1 {
+  padding-top: 30px;
+  font-size: 48px;
+}

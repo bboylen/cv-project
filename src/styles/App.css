@@ -1,0 +1,13 @@
+#page-wrapper {
+  height: 100%;
+}
+
+main {
+  background-color: #dbdbdb;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
