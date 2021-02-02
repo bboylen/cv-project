@@ -1,0 +1,12 @@
+div.info-display-values {
+  margin: 10px 10px 0 10px;
+}
+
+.info-display-values .entry {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.info-display button {
+  margin: 20px 0 0 10px;
+}
