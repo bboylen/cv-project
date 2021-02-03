@@ -31,10 +31,10 @@ class Practical extends React.Component {
       case "tasks":
         this.setState({ tasks: e.target.value });
         break;
-      case "dateFrom":
+      case "date-from":
         this.setState({ dateFrom: e.target.value });
         break;
-      case "dateTo":
+      case "date-to":
         this.setState({ dateTo: e.target.value });
         break;
       default:
@@ -56,11 +56,11 @@ class Practical extends React.Component {
     const { companyName, position, tasks, dateFrom, dateTo } = formValues;
 
     return (
-      <div className="personal-info">
+      <div className="practical-info">
         <h2>Practical Experience</h2>
         {!this.state.formSubmitted ? (
           <form className="practical-form" onSubmit={this.submitForm}>
-            <div className="input-field">
+            <div className="input-field a">
               <label htmlFor="company-name">Company Name</label>
               <input
                 type="text"
@@ -69,7 +69,7 @@ class Practical extends React.Component {
                 onChange={this.handleChange}
               ></input>
             </div>
-            <div className="input-field">
+            <div className="input-field b">
               <label htmlFor="position">Position</label>
               <input
                 type="text"
@@ -78,17 +78,17 @@ class Practical extends React.Component {
                 onChange={this.handleChange}
               ></input>
             </div>
-            <div className="input-field">
+            <div className="input-field c">
               <label htmlFor="tasks">Tasks</label>
               <input
-                type="text"
+                type="textarea"
                 name="tasks"
                 value={tasks}
                 onChange={this.handleChange}
               ></input>
             </div>
-            <div className="input-field">
-              <label htmlFor="dateFrom">From</label>
+            <div className="input-field d">
+              <label htmlFor="dateFrom">Start Date</label>
               <input
                 type="date"
                 name="date-from"
@@ -96,8 +96,8 @@ class Practical extends React.Component {
                 onChange={this.handleChange}
               ></input>
             </div>
-            <div className="input-field">
-              <label htmlFor="dateTo">To</label>
+            <div className="input-field e">
+              <label htmlFor="dateTo">End Date</label>
               <input
                 type="date"
                 name="date-to"
@@ -105,7 +105,7 @@ class Practical extends React.Component {
                 onChange={this.handleChange}
               ></input>
             </div>
-            <button type="submit" id="info-submit">
+            <button type="submit" id="practical-submit">
               Submit Experience
             </button>
           </form>

@@ -79,7 +79,7 @@ class Education extends React.Component {
                 onChange={this.handleChange}
               ></input>
             </div>
-            <button type="submit" id="info-submit">
+            <button type="submit" id="education-submit">
               Submit Info
             </button>
           </form>
