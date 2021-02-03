@@ -1,0 +1,38 @@
+div.practical-info {
+  height: 300px;
+  width: 70%;
+  margin-top: 30px;
+  background-color: #ebebeb;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  position: relative;
+}
+
+.practical-info h2 {
+  font-size: 32px;
+  margin: 10px 10px 0 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+}
+
+form.practical-form {
+  margin: 10px 10px 0 10px;
+  display: grid;
+  grid: 1fr 1fr / 1fr 1fr;
+  gap: 10px;
+}
+
+.input-field label {
+  display: block;
+  font-size: 21px;
+}
+
+.input-field input {
+  width: 90%;
+  margin-top: 10px;
+}
+
+#info-submit {
+  margin-top: 10px;
+  width: 40%;
+}
